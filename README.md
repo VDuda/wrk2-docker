@@ -7,3 +7,10 @@ Grab the built image https://hub.docker.com/r/1vlad/wrk2-docker/
 ```
 docker pull 1vlad/wrk2-docker
 ```
+
+## How to
+
+To use this container make sure to use the host's network or create a link
+```
+docker run --net=host 1vlad/wrk2-docker -t1 -c1 -d90s -R50 --latency http://localhost
+```
