@@ -12,7 +12,7 @@ docker pull 1vlad/wrk2-docker
 
 To use this container make sure to use the host's network or create a link
 ```
-docker run --rm --net=host 1vlad/wrk2-docker -t1 -c1 -d90s -R50 --latency http://localhost
+docker run --rm --net=host 1vlad/wrk2-docker -t4 -c200 -d10s -R2000 --latency http://localhost
 ```
 
 To hop inside the container
